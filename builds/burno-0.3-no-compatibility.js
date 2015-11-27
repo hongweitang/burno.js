@@ -19,6 +19,18 @@ var B =
     Components : {}
 };
 
+// Use Burno as a module
+
+if (typeof define === 'function' && define.amd) {
+    define( function() { return B; } );
+}
+else if (typeof module === 'object' && module.exports) {
+    module.exports = B;
+}
+else {
+    window.B = B;
+}
+
 /**
  * Simple JavaScript Inheritance
  * By John Resig http://ejohn.org/blog/simple-javascript-inheritance/
