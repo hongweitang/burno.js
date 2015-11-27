@@ -1,0 +1,5 @@
+{		
+	"name": "burno",		
+	"version": "0.3.0",		
+	"main": "builds/burno-0.3-no-compatibility.js"		
+}
